@@ -7,7 +7,7 @@ function Header() {
     return (
         <div className="header">
          {/* Main settings for navbar */}
-      <Navbar collapseOnSelect expand="sm" bg="light" variant="light" className="nav" sticky="top"    >
+      <Navbar collapseOnSelect expand="sm" bg="light" variant="light" className="nav" fixed="top"    >
         {/* Logo */}
         <Navbar.Brand href="#home" className="logo">V+R</Navbar.Brand>
         {/* Responsive bar */}
