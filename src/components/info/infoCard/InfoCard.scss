@@ -10,3 +10,35 @@
     color: darkcyan;
   }
 }
+
+@media (min-width: 1300px) {
+  .info__card {
+    img {
+      height: 90px;
+    }
+
+    h3 {
+      font-size: 1.8em;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+  }
+}
+
+@media (min-width: 1650px) {
+  .info__card {
+    img {
+      height: 100px;
+    }
+
+    h3 {
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 1.5em;
+    }
+  }
+}
