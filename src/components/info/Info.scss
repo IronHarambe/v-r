@@ -1,0 +1,55 @@
+.info {
+  // Introduction Text
+  .intro__text {
+    padding-top: 30px;
+
+    h1 {
+      font-size: 3em;
+      font-weight: 800;
+    }
+
+    h5 {
+      font-size: 1.3em;
+      font-weight: 100;
+    }
+  }
+
+  //   Service Intro
+  .info__cards {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+  }
+}
+
+// Media Queries
+
+// Tablets
+@media (min-width: 768px) {
+  .info {
+    .info__cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
+      gap: 40px;
+      justify-content: center;
+    }
+  }
+}
+
+// Bigger Screens
+@media (min-width: 1300px) {
+  .info {
+    .info__cards {
+      grid-template-columns: repeat(auto-fill, minmax(500px, 2fr));
+    }
+  }
+}
+
+// Ultra wudeScreens
+@media (min-width: 1650px) {
+  .info {
+    .info__cards {
+      grid-template-columns: repeat(auto-fill, minmax(600px, 2fr));
+    }
+  }
+}
