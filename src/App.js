@@ -7,10 +7,12 @@ import Testimonals from './components/testimonial/Testimonals';
 import Footer from './components/footer/Footer';
 import Contact from './components/pages/contact/Contact';
 import Work from './components/pages/work/Work';
+import ScrollToTop from './components/pages/ScrollToTop';
 
 function App() {
   return (
     <Router>
+    <ScrollToTop></ScrollToTop>
     <div className="App">
     <Switch>
 
@@ -27,7 +29,7 @@ function App() {
     </Route>
 
 
-    <Route path="/">
+    <Route  path="/">
     <Header></Header>
     <Banner></Banner>
     <Info></Info>

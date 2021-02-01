@@ -1,0 +1,45 @@
+.contact {
+  background-color: #f8f9fa;
+  .contact__banner {
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("./contact.jpg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      color: white;
+      font-size: 3em;
+    }
+  }
+
+  .contact__cards {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+// Tablets
+@media (min-width: 800px) {
+  .contact {
+    .contact__cards {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 500px;
+    }
+  }
+}
+
+// Larger screens
+@media (min-width: 12000px) {
+  .contact {
+    .contact__cards {
+      gap: 50px;
+    }
+  }
+}
