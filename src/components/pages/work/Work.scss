@@ -1,0 +1,59 @@
+.work {
+  background-color: #f8f9fa;
+  .work__banner {
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("./showcase.jpeg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-size: 3em;
+      color: white;
+    }
+  }
+
+  .midtext {
+    padding: 35px;
+  }
+
+  .work__showcase {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// Laptops and Tablets
+@media (min-width: 800px) {
+  .work {
+    img {
+      min-height: 300px;
+    }
+    .work__showcase {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+}
+
+// Pc
+@media (min-width: 1440px) {
+  .work {
+    img {
+      min-height: 400px;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .work {
+    img {
+      min-height: 450px;
+    }
+  }
+}
